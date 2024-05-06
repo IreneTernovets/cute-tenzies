@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 h1 {
   margin: 0;
   padding: 0;
@@ -31,18 +34,34 @@ main {
   box-shadow: 4px 4px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
+.title {
+  font-family: "Press Start 2P", system-ui;
+}
+
 .instructions {
-    margin-top: 0;
+    font-family: "VT323", monospace;
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-top: 7px;
     text-align: center;
-    max-width: 80%;
+    max-width: 95%;
 }
 
 .start-button {
+  font-family: "Press Start 2P", system-ui;
   height: 50px;
-    width: 150px;
+    width: 200px;
     border: none;
     border-radius: 15px;
-    font-size: 1.2rem;
+    font-size: 15px;
     cursor: pointer;
     margin-top: 40px;
+    background-color: rgb(149, 202, 255);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.timer-icon {
+  position:relative;
+  top: 4px;
+ margin-left: 4px;
 }
