@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
-h1 {
+h1, h2 {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,7 @@ body, html {
   align-items: center;
 }
 
-main {
+.wrapper {
   width: 400px;
   height: 200px;
   background-color: rgb(249, 211, 238);
@@ -64,4 +64,18 @@ main {
   position:relative;
   top: 4px;
  margin-left: 4px;
+}
+
+.tenzies-screen{
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(249, 211, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  border-radius: 30px;
+  box-shadow: none;
 }
