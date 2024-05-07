@@ -5,9 +5,6 @@ import { nanoid } from 'nanoid'
 import Die from "./Die";
 import picData from "./data"
 
-/*
-ще я подумала шо можна змінювати філ в свдж при натиску
-зараз я генерую просто числа*/
 
 function App() {
 
@@ -33,11 +30,22 @@ function App() {
     return newDice
   }
 
+  function handleHoldChange(id) {
+    setDice(prevDice => prevDice.map(die => {
+      return die.id === id ?
+        {
+          ...die, isHeld: !die.isHeld
+        } :
+        die
+    }))
+  }
+
   const diceElements = dice.map(die => <Die key={die.id}
     defaultValue={die.defaultValue}
     id={die.id}
     heldValue={die.heldValue}
     isHeld={die.isHeld}
+    handleHoldChange={handleHoldChange}
   ></Die>)
 
   return (

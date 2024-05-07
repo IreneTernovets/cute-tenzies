@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Die = (props) => {
-    console.log(props.isHeld)
+
     return (
-        < div className='svg-wrapper' >
+        <div onClick={() => props.handleHoldChange(props.id)}>
             {!props.isHeld ? props.defaultValue : props.heldValue}
         </div >
     )
