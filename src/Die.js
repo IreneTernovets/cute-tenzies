@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Die = () => {
-
+const Die = (props) => {
+    console.log(props.isHeld)
     return (
-        <div>Die</div>
+        < div className='svg-wrapper' >
+            {!props.isHeld ? props.defaultValue : props.heldValue}
+        </div >
     )
 }
 
